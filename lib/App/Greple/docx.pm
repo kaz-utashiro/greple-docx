@@ -175,6 +175,10 @@ sub docx_update {
 
 push @EXPORT, '&docx_text';
 sub docx_text {
+    my %arg = @_;
+    my $file = delete $arg{&FILELABEL} or die;
+    $file =~ /\.docx$/ or return;
+
     my @s;
     for (m{<w:p [^>]*>(.*?)</w:p>}g) {
 	s{<w:(delText)>.*?</w:\1>}{}g;
@@ -182,11 +186,15 @@ sub docx_text {
 	s{</?(?:[avw]|wp|pic)\d*:.*?>}{}g;
 	push @s, "$_\n";
     }
-    $_ = join '', @s;
+    $_ = join '', @s if @s;
 }
 
 push @EXPORT, '&docx_xml';
 sub docx_xml {
+    my %arg = @_;
+    my $file = delete $arg{&FILELABEL} or die;
+    $file =~ /\.docx$/ or return;
+
     my $level = 0;
     my %nonewline = map { $_ => 1 } qw(t delText);
 

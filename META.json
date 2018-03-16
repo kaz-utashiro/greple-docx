@@ -66,5 +66,8 @@
       }
    },
    "version" : "0.01",
-   "x_authority" : "cpan:UTASHIRO"
+   "x_authority" : "cpan:UTASHIRO",
+   "x_contributors" : [
+      "Kaz Utashiro <kaz@utashiro.com>"
+   ]
 }
