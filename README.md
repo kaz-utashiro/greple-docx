@@ -10,6 +10,11 @@ Version 0.01
 
 greple -Mdocx
 
+# IMPORTANT
+
+This module is now moved to App::Greple::msdoc module.
+Do not use.
+
 # DESCRIPTION
 
 This module makes it possible to search Microsoft Word docx file.
@@ -31,7 +36,7 @@ search target data.
 
 # LICENSE
 
-Copyright (C) Kazumasa Utashiro.
+Copyright 2018 Kazumasa Utashiro.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

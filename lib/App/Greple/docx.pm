@@ -10,6 +10,11 @@ Version 0.01
 
 greple -Mdocx
 
+=head1 IMPORTANT
+
+This module is now moved to App::Greple::msdoc module.
+Do not use.
+
 =head1 DESCRIPTION
 
 This module makes it possible to search Microsoft Word docx file.
@@ -35,7 +40,7 @@ Remove XML markups and extract document text.
 
 =head1 LICENSE
 
-Copyright (C) Kazumasa Utashiro.
+Copyright 2018 Kazumasa Utashiro.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
